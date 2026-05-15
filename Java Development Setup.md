@@ -2,7 +2,7 @@
 # Java Development Setup
 The following sections are described to help you setup Java development tools on your computer:
  - [Installing Java](#installing-java)
- - [Installing Maven](#installing-maven)
+ - [Installing Maven](#installing-maven-via-sdkman)
  - [Verify Installation](#verify-installation)
  - [Visual Studio Code Tips](#visual-studio-code-tips)
 
@@ -83,6 +83,13 @@ After installing a JDK, add it to MacOS' symlink list of installed JVMs like thi
 ```sh
 sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk
 ```
+
+## Installing Maven (via SDKMAN!)
+If you have SDKMAN! installed all you need to do is:
+```sh
+sdk install maven
+```
+and you are done!
 
 ## Installing Maven (System-Wide)
 > **Note**: You may opt out of this part if your project includes [Maven wrapper](https://maven.apache.org/tools/wrapper/) (`./mvnw`). Your project may be using the wrapper already, which will take care of Maven install for you automatically. It is probably more worth your time to add the Maven wrapper to your project then go through the manual installation below...
